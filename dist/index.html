@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">  
     <head>
-        <script src='https://unpkg.com/tesseract.js@v2.0.0-alpha.13/dist/tesseract.min.js'></script>
+        <script src="https://cdn.rawgit.com/naptha/tesseract.js/0.2.0/dist/tesseract.js"></script>
     </head>
     <body class=titlecenter>
   
@@ -32,8 +32,8 @@
     }
 
 
-    function myFunction() {
-        document.getElementById("demo")
+    //function myFunction() {
+        document.getElementById("go_button")
             .addEventListener("click", function(e) {
                 var url = document.getElementById("url").value;
                 runOCR(url);
@@ -41,7 +41,7 @@
             });
         document.getElementById("demo").innerHTML = "Hello World";
 
-}
+//}
 
 
 
