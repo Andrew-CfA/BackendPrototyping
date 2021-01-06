@@ -9,7 +9,6 @@
     <input type="text" id="url" placeholder="Image URL" />
     <input type="button" id="go_button" value="Run" onclick="myFunction()"  />
     
-    
     <p id="demo"></p>
     
     <div id="ocr_results"> </div>
@@ -34,12 +33,13 @@
 
 
     function myFunction() {
-        document.getElementById("go_button")
+        document.getElementById("demo")
             .addEventListener("click", function(e) {
                 var url = document.getElementById("url").value;
                 runOCR(url);
+            
             });
-            document.getElementById("demo").innerHTML = "Hello World";
+        document.getElementById("demo").innerHTML = "Hello World";
 
 }
 
