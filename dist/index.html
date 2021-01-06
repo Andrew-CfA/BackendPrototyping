@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">  
+    <head>
+        <title>Absentee Ballot Online Request Form</title>
+        
+        <script type='text/javascript'>
+            function preview_image(event) 
+            {
+                var reader = new FileReader();
+                reader.onload = function()
+                {
+                var output = document.getElementById('output_image');
+                output.src = reader.result;
+                }
+            reader.readAsDataURL(event.target.files[0]);
+}
+            </script>
+
+        <link rel='stylesheet' type='text/css' href='index.css'>
+    </head>
+    <body class=titlecenter>
+        <h1> Absentee Ballot Request Form</h1>
+        <p class=topright> pronto traducción al español | 
+            tagalog translation malapit | Bản dịch tiếng việt sớm | 即将中文翻译 </p>
+        <p> Please enter your information below to request your absentee ballot. If you enter your mobile number, we will send you a text confirmation, if you upload your image you will get further confirmation.</p>
+        <p class="successMsg" role="alert" hidden>Messages sent...</p>
+        <p class="errorMsg" role="alert" hidden>Something went wrong...</p>
+        
+        <!--- Google Translate Integration
+        <div id="google_translate_element"></div>  
+      
+        <script type="text/javascript">  
+            function googleTranslateElementInit() {  
+                new google.translate.TranslateElement( 
+                    {pageLanguage: 'en'},  
+                    'google_translate_element' 
+                );  
+            }  
+        </script>  
+          
+        <script type="text/javascript" src= 
+            "https://translate.google.com/translate_a/element.js? 
+            cb=googleTranslateElementInit"> 
+        </script>  
+        -->
+    
+
+    </body>
+
+
+<div id="ocr" class="ocr">
+	<h1 class="h">OCR with Tesseract</h1>
+	
+	<form id="ocr__form" class="ocr__form">
+		<label for="ocr__input">Image: </label>
+		<input id="ocr__input" type="text" />
+		<button type="submit">Start</button>
+	</form>
+	
+	<img id="ocr__img" class="ocr__img" />
+	
+	<div id="ocr__result" class="ocr__result">
+		<h3 class="h">Result:</h3>
+		<div id="ocr__output" class="ocr__output">
+			Waiting to start.
+		</div>
+	</div>
+</div>
