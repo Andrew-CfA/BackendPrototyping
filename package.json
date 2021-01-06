@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Andrew-CfA/BackendPrototyping/issues"
   },
-  "homepage": "https://github.com/Andrew-CfA/BackendPrototyping#readme"
+  "homepage": "https://github.com/Andrew-CfA/BackendPrototyping#readme",
+  "dependencies": {
+    "tesseract.js": "^2.0.0-beta.2"
+  }
 }
